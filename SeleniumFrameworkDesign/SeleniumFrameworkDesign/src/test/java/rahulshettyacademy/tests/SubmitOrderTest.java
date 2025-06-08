@@ -39,7 +39,7 @@ public class SubmitOrderTest extends BaseTest{
 	public void submitOrder(HashMap<String,String> input) throws IOException, InterruptedException
 	{
 
-		
+		System.out.println("change to test CICD")
 		ProductCatalogue productCatalogue = landingPage.loginApplication(input.get("email"), input.get("password"));
 		List<WebElement> products = productCatalogue.getProductList();
 		productCatalogue.addProductToCart(input.get("product"));

@@ -37,7 +37,9 @@ public class SubmitOrderTest extends BaseTest{
 
 	@Test(dataProvider="getData",groups= {"Purchase"})
 	public void submitOrder(HashMap<String,String> input) throws IOException, InterruptedException
-	{	ProductCatalogue productCatalogue = landingPage.loginApplication(input.get("email"), input.get("password"));
+	{	
+		System.out.println("test11111");
+		ProductCatalogue productCatalogue = landingPage.loginApplication(input.get("email"), input.get("password"));
 		List<WebElement> products = productCatalogue.getProductList();
 		productCatalogue.addProductToCart(input.get("product"));
 		CartPage cartPage = productCatalogue.goToCartPage();

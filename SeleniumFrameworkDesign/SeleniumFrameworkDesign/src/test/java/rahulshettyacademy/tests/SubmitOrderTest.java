@@ -40,6 +40,7 @@ public class SubmitOrderTest extends BaseTest{
 	{	
 		System.out.println("test11111");
 		System.out.println("test22222");
+			System.out.println("test3333");
 		ProductCatalogue productCatalogue = landingPage.loginApplication(input.get("email"), input.get("password"));
 		List<WebElement> products = productCatalogue.getProductList();
 		productCatalogue.addProductToCart(input.get("product"));

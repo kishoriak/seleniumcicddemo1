@@ -19,9 +19,7 @@ public class StandAloneTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-        System.out.println("change to check cicd");
-		System.out.println("change to check cicd2222");
-		String productName = "ZARA COAT 3";
+        String productName = "ZARA COAT 3";
 		//chrome setup using WebDriverManager, chrome browser
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
